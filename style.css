@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root {
+    --marrom-escuro: #290001;
+    --marrom-medio: #87431D;
+    --marrom-claro: #C87941;
+    --bege: #FFF8EA;
+
+    --fonte: 'Roboto Slab', serif;
+}
+
+/* Cabecalho */
+
+.cabecalho {
+    align-items: center;
+    background: var(--bege);
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 0) {
+    .cabecalho {
+        padding: 0 1rem;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+}
+
+/* logo */
+
+.logo {
+    width: 70px;
+}
+
+.logo__titulo {
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: auto;
+    color: var(--marrom-escuro);
+}
+
+
+/* Banner */
+
+.banner {
+    position: relative;
+}
+
+.banner__titulo {
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__titulo {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .banner__titulo {
+        font-size: 5.0625rem;
+    }
+}
+
+.banner__imagem {
+    background: url('../../img/cafeteria.jpeg') no-repeat center / cover;
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__imagem {
+        height: calc(100vh - 51px);
+    }
+}
+@media screen and (min-width: 768px) {
+    .banner__imagem {
+        height: calc(100vh - 72px);
+    }
+}
+
+
+/* Sobre */
+
+.sobre {
+    text-align: center;
+    background-color: var(--bege);
+}
+
+@media screen and (min-width: 0) {
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre {
+        padding: 2.5rem;
+    }
+}
+
+.sobre__titulo {
+    color: var(--marrom-medio);
+    font-family: var(--fonte)
+}
+
+@media screen and (min-width: 0) {
+    .sobre__titulo {
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre__titulo {
+        font-size: 3.1875rem;
+    }
+}
+
+.sobre__descricao {
+    color: #595959;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 0) {
+    .sobre__descricao {
+        font-size: 1.7rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre__descricao {
+        font-size: 1.75rem;
+    }
+}
+
+
+/* Receitas */
+
+.receitas {
+    background: var(--marrom-escuro);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 0) {
+    .receitas {
+        padding: 5rem 0 0 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .receitas {
+        padding: 5rem 0 0 2.5rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .receitas {
+        padding: 5rem 0 0 5rem;
+    }
+}
+
+.receita__conteudo {
+    padding: 1rem;
+    background-color: var(--bege);
+    background-size: cover;
+}
+
+.receita__descricao {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.receita__imagem {
+    height: 250px;
+}
+
+.receita__titulo {
+    font-size: 1.4375rem;
+}
+
+.receita {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 0) {
+    .receita {
+        margin-right: 1rem;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .receita {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+}
+@media screen and (min-width: 992px) {
+    .receita {
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
+}
+
+/* menu */
+
+.menu__item {
+    list-style: none;
+    font-size: 24px;
+}
+
+.menu__link {
+    color: #333333;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu__link:last-child {
+    margin-right: none;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+.menu__lista {
+    display: flex;
+}
+
+/* quem somos */
+
+.quem-somos {
+    padding: 5rem;
+    text-align: center;
+    background-color: var(--bege);
+}
+
+.quem-somos__titulo {
+    color: var(--marrom-medio);
+    font-family: var(--fonte);
+    font-size: 3.1875rem;
+    margin-bottom: 1rem;
+}
+
+.quem-somos__descricao {
+    color: #595959;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+/* pessoas */
+
+.pessoas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+@media screen and (min-width: 0) {
+    .pessoas {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) {
+    .pessoas {
+        flex-direction: row;
+    }
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+@media screen and (min-width: 0) {
+    .pessoa {
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .pessoa {
+        margin-bottom: 0;
+    }
+}
+
+.pessoa__imagem {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.pessoa__imagem--cliente {
+    background-image: url('img/pessoa-cappucino.webp');
+}
+
+.pessoa__imagem--cliente1 {
+    background-image: url('img/trabalhador\ 1.jpeg');
+}
+
+.pessoa__imagem--cliente2 {
+    background-image: url('img/trabalhador\ 2.jpeg');
+}
+
+.pessoa__imagem--cliente3 {
+    background-image: url('img/trabalhador\ 3.jpeg');
+}
+
+.pessoa__imagem--cliente4 {
+    background-image: url('img/trabalhado\ 4.jpeg');
+}
+
+.pessoa__imagem--cliente5 {
+    background-image: url('img/trabalhador\ 5.jpeg');
+}
+
+/* localizacao */
+
+.localizacao {
+    padding: 5rem;
+    text-align: center;
+    background-color: var(--marrom-escuro);
+}
+
+.localizacao__titulo {
+    color: var(--marrom-claro);
+    font-family: var(--fonte);
+    font-size: 3.1875rem;
+    margin-bottom: 1rem;
+}
+
+.localizacao__descricao {
+    color: var(--bege);
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.descrição__imagem {
+    width: 50%; 
+    height: 15%;
+}
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    margin: auto;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botões {
+    display: flex;
+}
+
+.card {
+    background: var(--bege);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descrição__titulo {
+    color: #000000;
+    margin-top: 150px;
+    font-weight: 700;
+    font-family: var(--fonte);
+    font-size: 40px;
+}
+
+.descrição__titulo-livro {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descrição__texto {
+    font-size: 24px;
+}
+
+.botões__item {
+    margin: 0 0.5em;
+}
+
+.botões__ancora {
+    background-color: var(--marrom-claro);
+    padding: 1em 2.2em;
+    color: var(--bege);
+    font-weight: 700;
+    text-decoration: none;
+    justify-content: end;
+}
+
+/* rodape */
+
+.rodape {
+    background: var(--bege);
+    color: #595959;
+    text-align: center;
+    padding: 1.5625rem 5rem;
+    text-transform: lowercase;
+}
+
+@media screen and (min-width: 0) {
+    .rodape {
+        font-size: 1.125rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .rodape {
+        font-size: 2rem;
+    }
+}
+
+.rodape__logo {
+    width: 70px;
+}
+
+.rodape__titulo {
+    margin-top: 0%;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: auto;
+    color: var(--marrom-escuro);
+}
+
+.rodape__descricao {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.rodape__lista {
+    list-style: none;
+}
+
+.rodape__items {
+    text-decoration: none;
+}
