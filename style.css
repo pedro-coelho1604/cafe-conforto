@@ -75,7 +75,7 @@
 }
 
 .banner__imagem {
-    background: url('../../img/cafeteria.jpeg') no-repeat center / cover;
+    background: url('img/cafeteria.jpeg') no-repeat center / cover;
     width: 100%;
 }
 
