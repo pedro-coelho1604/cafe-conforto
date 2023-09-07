@@ -4,9 +4,9 @@ Descrição:
 Crie uma landing page para uma cafeteria fictícia chamada "Café & Conforto". A página deve transmitir uma sensação aconchegante e acolhedora, com destaque para seus cafés especiais e espaços para leitura e trabalho.
 
 Diretrizes:
-<!-- Utilize cores quentes e imagens relacionadas a café.  -->
-<!-- Inclua um cabeçalho com o nome da cafeteria e uma frase de chamariz (por exemplo: "O melhor café da cidade"). -->
-<!-- Destaque um menu breve com opções de cafés e lanches. -->
-<!-- Adicione uma seção com imagens de pessoas lendo ou trabalhando na cafeteria. -->
-<!-- Insira um mapa pequeno ou um link para a localização da cafeteria. -->
-<!-- Por fim, tenha uma seção de contato, para reserva de mesas ou pedidos de informações. -->
+Utilize cores quentes e imagens relacionadas a café. 
+Inclua um cabeçalho com o nome da cafeteria e uma frase de chamariz (por exemplo: "O melhor café da cidade"). 
+Destaque um menu breve com opções de cafés e lanches. 
+Adicione uma seção com imagens de pessoas lendo ou trabalhando na cafeteria.
+Insira um mapa pequeno ou um link para a localização da cafeteria. 
+Por fim, tenha uma seção de contato, para reserva de mesas ou pedidos de informações.
